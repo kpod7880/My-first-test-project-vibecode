@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources & Ebooks | Godswill Kpologri - Kore Homes</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            900: '#0F172A',
+                            800: '#1E293B',
+                        },
+                        emerald: {
+                            600: '#059669',
+                            500: '#10B981',
+                            400: '#34D399',
+                        },
+                        gold: {
+                            500: '#F59E0B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS Refinements -->
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #064E3B 100%);
+        }
+        .card-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #34D399 0%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-gold-500 flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-105 transition-transform">
+                    GK
+                </div>
+                <div>
+                    <span class="text-white font-bold text-lg tracking-wide block">Godswill Kpologri</span>
+                    <span class="text-emerald-400 text-xs font-medium tracking-wider uppercase">Kore Homes & Investment</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-emerald-400 transition-colors">About</a>
+                <a href="services.html" class="hover:text-emerald-400 transition-colors">Services</a>
+                <a href="portfolio.html" class="hover:text-emerald-400 transition-colors">Portfolio</a>
+                <a href="resources.html" class="text-emerald-400 font-semibold transition-colors">Resources</a>
+                <a href="contact.html" class="hover:text-emerald-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="contact.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold text-sm shadow-lg shadow-emerald-900/30 hover:from-emerald-400 hover:to-emerald-500 transition-all">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="relative hero-gradient text-white pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+            <div class="absolute top-1/3 left-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="max-w-3xl space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+                        Market Authority & Intellectual Property[cite: 1, 2]
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+                        Ebooks & <span class="text-gradient">Investor Resources</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        Industry-leading educational frameworks and anti-scam guides authored by Godswill Kpologri to protect property buyers and build lasting trust[cite: 1, 2].
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PUBLICATION SECTION -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="bg-navy-900 rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 text-white border border-slate-800">
+                    <div class="lg:col-span-6 p-8 md:p-12 space-y-6 flex flex-col justify-center">
+                        <div class="inline-block px-3 py-1 rounded-full bg-gold-500/20 text-gold-500 text-xs font-bold uppercase tracking-wider w-fit">
+                            Featured Publication[cite: 2]
+                        </div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">
+                            "How to Build Wealth Through Nigerian Real Estate Without Being Scammed, Overpaying, or Tying Down Your Money for Years"
+                        </h2>
+                        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                            Also known as <strong class="text-emerald-400">The Real Estate Scam Protection Guide</strong>[cite: 2]. This educational framework acts as an effective customer acquisition engine, turning informed prospects into long-term buyers[cite: 2].
+                        </p>
+                        <div class="space-y-3 pt-2">
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Title verification & fraud prevention strategies[cite: 1, 2]
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Avoiding inflated pricing and illiquid land commitments[cite: 1]
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Structuring secure capital appreciation in Delta State[cite: 1, 2]
+                            </div>
+                        </div>
+                        <div class="pt-4 flex flex-wrap gap-4">
+                            <a href="contact.html" class="px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-sm shadow-lg shadow-emerald-500/20 transition-all inline-block">
+                                Request Guide Access
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 bg-slate-800 p-8 flex flex-col justify-center items-center text-center space-y-4 border-t lg:border-t-0 lg:border-l border-slate-700">
+                        <div class="w-24 h-32 rounded-xl bg-gradient-to-tr from-emerald-600 to-gold-500 flex flex-col items-center justify-center p-4 text-white shadow-2xl transform rotate-2 hover:rotate-0 transition-transform">
+                            <span class="text-xs uppercase tracking-widest font-bold opacity-80">Ebook</span>
+                            <span class="text-lg font-extrabold mt-2">SCAM PROTECTION</span>
+                            <span class="text-[10px] mt-1 opacity-90">Godswill Kpologri</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white pt-2">Author: Godswill Kpologri[cite: 1, 2]</h3>
+                        <p class="text-slate-400 text-xs max-w-xs leading-relaxed">
+                            Published by Kore Homes and Investment Ltd to establish absolute market transparency[cite: 1, 2].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY EDUCATIONAL RESOURCES MATTER -->
+        <section class="py-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-600">Client Advocacy[cite: 1]</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900">Empowering Investors Through Knowledge</h3>
+                    <p class="text-slate-600">Our publishing initiatives are designed to protect and educate the modern Nigerian property investor[cite: 1, 2].</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl font-bold">
+                            🛡️
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">Risk Elimination</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Arming buyers with the exact red flags to look out for regarding land documentation, title discrepancies, and fraudulent agents[cite: 1, 2].
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-xl font-bold">
+                            📈
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">Informed Valuation</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Leveraging Estate Management principles to help investors calculate true plot value and avoid inflated market pricing[cite: 1, 2].
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-600 flex items-center justify-center text-xl font-bold">
+                            🤝
+                        </div>
+                        <h4 class="text-lg font-bold text-slate-900">Lasting Trust</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Building long-term client relationships by putting transparency first before any transaction takes place[cite: 1, 2].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="py-16 bg-navy-900 text-white text-center">
+            <div class="max-w-4xl mx-auto px-6 space-y-6">
+                <h2 class="text-3xl font-extrabold">Have Questions About Property Acquisition or Our Guide?</h2>
+                <p class="text-slate-300 max-w-xl mx-auto text-sm">
+                    Reach out to Godswill Kpologri directly for expert advisory or to secure your copy[cite: 1, 2].
+                </p>
+                <div class="pt-2">
+                    <a href="contact.html" class="px-8 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-sm shadow-lg shadow-emerald-500/20 transition-all inline-block">
+                        Get in Touch[cite: 1]
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-navy-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-white font-bold text-sm">GK</div>
+                    <span class="text-white font-bold text-lg">Godswill Kpologri</span>
+                </div>
+                <p class="text-sm max-w-sm text-slate-400">
+                    Founder & CEO of Kore Homes and Investment Ltd[cite: 1]. Specializing in secure land acquisitions, site layout design, and elite property development in Delta State, Nigeria[cite: 1].
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-emerald-400 transition-colors">About Me</a></li>
+                    <li><a href="services.html" class="hover:text-emerald-400 transition-colors">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-emerald-400 transition-colors">Portfolio & Projects</a></li>
+                    <li><a href="resources.html" class="hover:text-emerald-400 transition-colors">Ebooks & Guides</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Contact Info</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>Delta State, Nigeria[cite: 1]</li>
+                    <li><a href="mailto:kpologrigodswill@gmail.com" class="hover:text-emerald-400 transition-colors">kpologrigodswill@gmail.com[cite: 1]</a></li>
+                    <li><a href="tel:08088599744" class="hover:text-emerald-400 transition-colors">08088599744[cite: 1]</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Godswill Kpologri (Kore Homes and Investment Ltd). All rights reserved[cite: 1].</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-emerald-400 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

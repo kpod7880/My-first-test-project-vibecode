@@ -1,0 +1,85 @@
+/* ==========================================================================
+   KORE HOMES & INVESTMENT - GLOBAL STYLES (style.css)
+   Aesthetic, Vibrant, and Modern CSS Variables & Utility Overrides
+   ========================================================================== */
+
+:root {
+    --bg-main: #F8FAFC;
+    --navy-base: #0F172A;
+    --navy-card: #1E293B;
+    --emerald-accent: #10B981;
+    --emerald-dark: #059669;
+    --gold-accent: #F59E0B;
+    --text-main: #1E293B;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+}
+
+/* Base Document Setup */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* Custom Gradients */
+.hero-gradient {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #064E3B 100%);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #34D399 0%, #F59E0B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Components */
+.card-glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-glass-light {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Smooth Transitions & Hover Polish */
+a, button {
+    transition: all 0.25s ease-in-out;
+}
+
+/* Custom Selection Highlight */
+::selection {
+    background-color: #10B981;
+    color: #FFFFFF;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #10B981;
+}

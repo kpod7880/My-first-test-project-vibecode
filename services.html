@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Godswill Kpologri - Real Estate Advisory & Development</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            900: '#0F172A',
+                            800: '#1E293B',
+                        },
+                        emerald: {
+                            600: '#059669',
+                            500: '#10B981',
+                            400: '#34D399',
+                        },
+                        gold: {
+                            500: '#F59E0B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS Refinements -->
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #064E3B 100%);
+        }
+        .card-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #34D399 0%, #F59E0B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- ==================== HEADER & NAVIGATION ==================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-gold-500 flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-105 transition-transform">
+                    GK
+                </div>
+                <div>
+                    <span class="text-white font-bold text-lg tracking-wide block">Godswill Kpologri</span>
+                    <span class="text-emerald-400 text-xs font-medium tracking-wider uppercase">Kore Homes & Investment</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-emerald-400 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-emerald-400 transition-colors">About</a>
+                <a href="services.html" class="text-emerald-400 font-semibold transition-colors">Services</a>
+                <a href="portfolio.html" class="hover:text-emerald-400 transition-colors">Portfolio</a>
+                <a href="resources.html" class="hover:text-emerald-400 transition-colors">Resources</a>
+                <a href="contact.html" class="hover:text-emerald-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="contact.html" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold text-sm shadow-lg shadow-emerald-900/30 hover:from-emerald-400 hover:to-emerald-500 transition-all">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="relative hero-gradient text-white pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+            <div class="absolute top-1/3 left-10 w-80 h-80 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="max-w-3xl space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+                        Professional Offerings[cite: 1]
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+                        Core <span class="text-gradient">Services & Expertise</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        Delivering structured real estate development, risk mitigation frameworks, and technical site planning through Kore Homes and Investment Ltd[cite: 1].
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILED SERVICES LISTING -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 space-y-20">
+
+                <!-- Service 1: Property Development & Land Expansion -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-2xl font-bold">
+                            🏗️
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-slate-900">Property Development & Land Expansion</h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            Spearheading major residential developments from the ground up, including flagship projects like Emerald City Estate in Orerokpe, Delta State[cite: 1, 2]. Managing end-to-end execution from raw land acquisition to layout planning and structured unit absorption[cite: 1, 2].
+                        </p>
+                        <ul class="space-y-3 text-slate-700 text-sm">
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Large-scale residential estate conceptualization and execution[cite: 1, 2]</li>
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Site infrastructure planning and investor payment frameworks[cite: 2]</li>
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Corporate strategy, operations management, and investor relations[cite: 1]</li>
+                        </ul>
+                        <div class="pt-2">
+                            <a href="contact.html" class="px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 transition-all inline-block">
+                                Inquire About Developments
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 bg-slate-100 rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Technical Pillar</span>
+                        <h3 class="text-xl font-bold text-slate-900">Land Survey Boundary Conversion & Layouts</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Translating complex land survey boundary measurements into precise square-meter metrics[cite: 1]. Designing efficient, legally compliant digital site plans for residential layouts that minimize external consulting costs and accelerate project launch timelines[cite: 1, 2].
+                        </p>
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold">📐</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-400 uppercase">Precision Metric</h4>
+                                <p class="text-slate-900 font-semibold text-sm">Square-meter site computation & boundary mapping[cite: 1]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Client Advocacy & Fraud Prevention -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6 order-2 lg:order-1 bg-slate-100 rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Asset Protection</span>
+                        <h3 class="text-xl font-bold text-slate-900">Secure Real Estate Advisory</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Protecting prospective property buyers and investors from fraudulent transactions, inflated pricing, and illiquid land commitments through robust due diligence frameworks[cite: 1].
+                        </p>
+                        <div class="space-y-3">
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 text-sm font-medium text-slate-700 flex items-center gap-3">
+                                <span class="text-emerald-500 font-bold">✓</span> Title verification and risk assessment
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 text-sm font-medium text-slate-700 flex items-center gap-3">
+                                <span class="text-emerald-500 font-bold">✓</span> Safe acquisition advisory[cite: 1]
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 text-sm font-medium text-slate-700 flex items-center gap-3">
+                                <span class="text-emerald-500 font-bold">✓</span> Capital appreciation strategy[cite: 2]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 order-1 lg:order-2 space-y-6">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-2xl font-bold">
+                            🛡️
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-slate-900">Client Advocacy & Risk Mitigation</h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            Grounding real estate transactions in transparency and consumer trust[cite: 1, 2]. As an independent consultant and CEO, I provide authoritative guidance to ensure clients navigate the Nigerian property market safely without falling victim to scams[cite: 1, 2].
+                        </p>
+                        <ul class="space-y-3 text-slate-700 text-sm">
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-amber-500"></span> Real estate fraud prevention frameworks[cite: 1]</li>
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-amber-500"></span> Educational guide authoring (Anti-Scam frameworks)[cite: 1, 2]</li>
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-amber-500"></span> Transparent title and documentation review[cite: 1]</li>
+                        </ul>
+                        <div class="pt-2">
+                            <a href="resources.html" class="px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 transition-all inline-block">
+                                Explore Scam Protection Guide[cite: 2]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Brand Positioning & Digital Strategy -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-600 flex items-center justify-center text-2xl font-bold">
+                            🚀
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-slate-900">Brand Positioning & Digital Strategy</h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            Leveraging digital design, high-definition visual assets, and workflow automation tools to optimize real estate marketing funnels and drive high customer acquisition rates[cite: 1].
+                        </p>
+                        <ul class="space-y-3 text-slate-700 text-sm">
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Marketing collateral design & promotional content[cite: 1]</li>
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Multi-channel brand positioning for real estate firms[cite: 1]</li>
+                            <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-purple-500"></span> Educational lead generation systems (Ebooks & guides)[cite: 1, 2]</li>
+                        </ul>
+                        <div class="pt-2">
+                            <a href="contact.html" class="px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 transition-all inline-block">
+                                Partner on Strategy
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 bg-slate-100 rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-purple-600">Market Authority</span>
+                        <h3 class="text-xl font-bold text-slate-900">Trust Building Through Intellectual Property</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Authoring industry-leading publications that act as powerful customer acquisition engines—converting informed market prospects into long-term property investors[cite: 1, 2].
+                        </p>
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center font-bold">📚</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-400 uppercase">Flagship Publication</h4>
+                                <p class="text-slate-900 font-semibold text-sm">The Real Estate Scam Protection Guide[cite: 2]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WORKING PROCESS SECTION -->
+        <section class="py-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-emerald-600">Workflow Methodology</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900">How We Deliver Excellence</h3>
+                    <p class="text-slate-600">A structured, four-step approach to securing investments and developing communities.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 space-y-4 relative">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center text-lg shadow-md">1</div>
+                        <h4 class="text-lg font-bold text-slate-900">Consultation & Needs Analysis</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Understanding client investment goals, land acquisition targets, or enterprise development scope.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 space-y-4 relative">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center text-lg shadow-md">2</div>
+                        <h4 class="text-lg font-bold text-slate-900">Due Diligence & Title Verification</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Conducting rigorous title advisory[cite: 1] and survey boundary reviews[cite: 1] to guarantee absolute security.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 space-y-4 relative">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center text-lg shadow-md">3</div>
+                        <h4 class="text-lg font-bold text-slate-900">Layout & Strategic Execution</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Translating site measurements into digital plans[cite: 1] and deploying marketing funnels for developments like Emerald City[cite: 1, 2].
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 space-y-4 relative">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center text-lg shadow-md">4</div>
+                        <h4 class="text-lg font-bold text-slate-900">Secure Handover & Growth</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Finalizing documentation, delivering high-yield assets, and ensuring long-term value appreciation[cite: 2].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="py-16 bg-navy-900 text-white text-center">
+            <div class="max-w-4xl mx-auto px-6 space-y-6">
+                <h2 class="text-3xl font-extrabold">Ready to Engage Our Real Estate Services?</h2>
+                <p class="text-slate-300 max-w-xl mx-auto text-sm">
+                    Contact Godswill Kpologri and Kore Homes and Investment Ltd today for professional property advisory and development[cite: 1].
+                </p>
+                <div class="pt-2">
+                    <a href="contact.html" class="px-8 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold text-sm shadow-lg shadow-emerald-500/20 transition-all inline-block">
+                        Book a Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-navy-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-white font-bold text-sm">GK</div>
+                    <span class="text-white font-bold text-lg">Godswill Kpologri</span>
+                </div>
+                <p class="text-sm max-w-sm text-slate-400">
+                    Founder & CEO of Kore Homes and Investment Ltd[cite: 1]. Specializing in secure land acquisitions, site layout design, and elite property development in Delta State, Nigeria[cite: 1].
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-emerald-400 transition-colors">About Me</a></li>
+                    <li><a href="services.html" class="hover:text-emerald-400 transition-colors">Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-emerald-400 transition-colors">Portfolio & Projects</a></li>
+                    <li><a href="resources.html" class="hover:text-emerald-400 transition-colors">Ebooks & Guides</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Contact Info</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>Delta State, Nigeria[cite: 1]</li>
+                    <li><a href="mailto:kpologrigodswill@gmail.com" class="hover:text-emerald-400 transition-colors">kpologrigodswill@gmail.com[cite: 1]</a></li>
+                    <li><a href="tel:08088599744" class="hover:text-emerald-400 transition-colors">08088599744[cite: 1]</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Godswill Kpologri (Kore Homes and Investment Ltd). All rights reserved[cite: 1].</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-emerald-400 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
